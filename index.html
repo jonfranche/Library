@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Library</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <header>
+        <h3>Library</h3>
+        <button id="newBook" onclick="showNewBook()">Add New Book</button>
+    </header>
+    <body>
+        <div id="container">
+            <div id="newBookForm">
+                <h4>New Book</h4>
+                <!--<form name="newBookForm">-->
+                    Title:
+                    <input type="text" id="newTitle"><br>
+                    Author:
+                    <input type="text" id="newAuthor"><br>
+                    Pages:
+                    <input type="text" id="newPages"><br>
+                    Has Been Read:
+                    <input type="checkbox" id="newRead"><br>
+                    <div>
+                        <button id="submit" onclick="addBookToLibrary(), showNewBook()">Submit</button>
+                        <button id="cancelNewBook" onclick="showNewBook()">Cancel</button>
+                    </div>
+                <!--</form>-->
+            </div>
+            <div id="libraryContainer">
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
